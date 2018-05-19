@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainFirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-
+    @IBAction func weatherButton(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "weatherSague", sender: self)
+        
+    }
+    
 }
 
