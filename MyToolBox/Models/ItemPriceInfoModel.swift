@@ -12,7 +12,8 @@ import UIKit
 struct itemPriceInformationModel {
     
     var name : [String] = []
-    var price : [String] = []
+    var price : [Double] = []
     var image : [UIImage?] = []
+    var date : [NSDate]
     
 }

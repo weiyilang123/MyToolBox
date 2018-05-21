@@ -123,6 +123,7 @@
 		4492835420AE645F00A3C001 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4492834420AE63FE00A3C001 /* MyToolBox.xcdatamodeld */,
 				4492463C20AE8B99000B0F1E /* WeatherDataModel.swift */,
 				446C5C6120B26D9800DA3DF9 /* ItemPriceInfoModel.swift */,
 			);
@@ -133,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				4492834720AE63FF00A3C001 /* Assets.xcassets */,
-				4492834420AE63FE00A3C001 /* MyToolBox.xcdatamodeld */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
