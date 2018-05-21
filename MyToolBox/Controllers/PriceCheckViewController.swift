@@ -100,10 +100,7 @@ class PriceCheckViewController: UIViewController, UITableViewDelegate, UITableVi
         }.resume()
     }
     
-    @IBOutlet weak var itemImage: UIImageView!
-    @IBOutlet weak var itemName: UILabel!
-    @IBOutlet weak var itemPrice: UILabel!
-    
+
     
 
     
