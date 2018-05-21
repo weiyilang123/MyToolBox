@@ -28,21 +28,28 @@ struct Items : Codable {
     let items : [ItemInfo]
 }
 
-class PriceCheckViewController: UIViewController {
 
+
+class PriceCheckViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+
+    var priceInfoModel = itemPriceInformationModel()
     @IBOutlet weak var barcode: UILabel!
     var barcodeReturnResult = String()
     @IBAction func unwindToPriceCheckSegue(segue: UIStoryboardSegue){
         
     }
+    @IBOutlet weak var displayPriceInfoTableView: UITableView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         if(barcodeReturnResult != ""){
         let fixedString =  String(barcodeReturnResult.dropFirst())
@@ -54,6 +61,9 @@ class PriceCheckViewController: UIViewController {
             barcode.text = "Scan an item to get barcode info"
         }
         
+        displayPriceInfoTableView.delegate = self
+        displayPriceInfoTableView.dataSource = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,10 +72,7 @@ class PriceCheckViewController: UIViewController {
     }
     
 
-    @IBAction func scanBarcode(_ sender: UIButton) {
-        
-        performSegue(withIdentifier: "captureSegue", sender: self)
-    }
+
     
     // get price info from api(walmart)
     
@@ -97,6 +104,9 @@ class PriceCheckViewController: UIViewController {
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemPrice: UILabel!
     
+    
+
+    
     func displayItemInfo(itemInfo : ItemInfo) {
         guard let imageURL = URL(string: itemInfo.largeImage) else {return}
         
@@ -105,9 +115,10 @@ class PriceCheckViewController: UIViewController {
         let task = URLSession.shared.dataTask(with: imageURL) { data, _, _ in
             guard let data = data else { return }
             DispatchQueue.main.async { // Make sure you're on the main thread here
-                self.itemName.text = itemInfo.name
-                self.itemPrice.text = "$\(itemInfo.salePrice)"
-                self.itemImage.image = UIImage(data: data)
+                self.priceInfoModel.name.insert(itemInfo.name, at: 0)
+                self.priceInfoModel.price.insert("$\(itemInfo.salePrice)", at: 0)
+                self.priceInfoModel.image.insert(UIImage(data: data), at: 0)
+                self.displayPriceInfoTableView.reloadData()
             }
         }
         task.resume()
@@ -115,9 +126,25 @@ class PriceCheckViewController: UIViewController {
         
     }
         
+    // put priceData into table view
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return priceInfoModel.name.count
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = Bundle.main.loadNibNamed("PriceInfoCell", owner: self, options: nil)?.first as! PriceInfoCell
+        cell.itemImage.image = priceInfoModel.image[indexPath.row]
+        cell.itemName.text = priceInfoModel.name[indexPath.row]
+        cell.itemPrice.text = priceInfoModel.price[indexPath.row]
+        print(priceInfoModel.name)
+        return cell
+    }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+        
+    }
     
 
 }

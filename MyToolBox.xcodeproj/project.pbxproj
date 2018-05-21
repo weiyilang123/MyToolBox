@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4428C5D420B1306B00F9D3D2 /* PriceCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428C5D320B1306B00F9D3D2 /* PriceCheckViewController.swift */; };
 		443C7E2D20B03298006B7043 /* CaptureBarCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C7E2C20B03298006B7043 /* CaptureBarCodeViewController.swift */; };
+		446C5C5E20B267A800DA3DF9 /* PriceInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 446C5C5D20B267A800DA3DF9 /* PriceInfoCell.xib */; };
+		446C5C6020B26BC500DA3DF9 /* PriceInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446C5C5F20B26BC500DA3DF9 /* PriceInfoCell.swift */; };
+		446C5C6220B26D9800DA3DF9 /* ItemPriceInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446C5C6120B26D9800DA3DF9 /* ItemPriceInfoModel.swift */; };
 		4492463D20AE8B99000B0F1E /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492463C20AE8B99000B0F1E /* WeatherDataModel.swift */; };
 		4492464520AEC8D8000B0F1E /* WeatherDisplayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492464420AEC8D8000B0F1E /* WeatherDisplayCollectionViewCell.swift */; };
 		4492833E20AE63FE00A3C001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492833D20AE63FE00A3C001 /* AppDelegate.swift */; };
@@ -24,6 +27,9 @@
 /* Begin PBXFileReference section */
 		4428C5D320B1306B00F9D3D2 /* PriceCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCheckViewController.swift; sourceTree = "<group>"; };
 		443C7E2C20B03298006B7043 /* CaptureBarCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureBarCodeViewController.swift; sourceTree = "<group>"; };
+		446C5C5D20B267A800DA3DF9 /* PriceInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceInfoCell.xib; sourceTree = "<group>"; };
+		446C5C5F20B26BC500DA3DF9 /* PriceInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceInfoCell.swift; sourceTree = "<group>"; };
+		446C5C6120B26D9800DA3DF9 /* ItemPriceInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPriceInfoModel.swift; sourceTree = "<group>"; };
 		4492463C20AE8B99000B0F1E /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		4492464420AEC8D8000B0F1E /* WeatherDisplayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDisplayCollectionViewCell.swift; sourceTree = "<group>"; };
 		4492833A20AE63FE00A3C001 /* MyToolBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToolBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +105,8 @@
 				443C7E0B20B003D1006B7043 /* WeatherPageControlers */,
 				4428C5D320B1306B00F9D3D2 /* PriceCheckViewController.swift */,
 				443C7E2C20B03298006B7043 /* CaptureBarCodeViewController.swift */,
+				446C5C5F20B26BC500DA3DF9 /* PriceInfoCell.swift */,
+				446C5C5D20B267A800DA3DF9 /* PriceInfoCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				4492463C20AE8B99000B0F1E /* WeatherDataModel.swift */,
+				446C5C6120B26D9800DA3DF9 /* ItemPriceInfoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4492834B20AE63FF00A3C001 /* LaunchScreen.storyboard in Resources */,
+				446C5C5E20B267A800DA3DF9 /* PriceInfoCell.xib in Resources */,
 				4492834820AE63FF00A3C001 /* Assets.xcassets in Resources */,
 				4492834320AE63FE00A3C001 /* Main.storyboard in Resources */,
 			);
@@ -263,6 +273,8 @@
 				443C7E2D20B03298006B7043 /* CaptureBarCodeViewController.swift in Sources */,
 				4428C5D420B1306B00F9D3D2 /* PriceCheckViewController.swift in Sources */,
 				4492834620AE63FE00A3C001 /* MyToolBox.xcdatamodeld in Sources */,
+				446C5C6020B26BC500DA3DF9 /* PriceInfoCell.swift in Sources */,
+				446C5C6220B26D9800DA3DF9 /* ItemPriceInfoModel.swift in Sources */,
 				4492463D20AE8B99000B0F1E /* WeatherDataModel.swift in Sources */,
 				4492464520AEC8D8000B0F1E /* WeatherDisplayCollectionViewCell.swift in Sources */,
 				4492835720AE66CD00A3C001 /* WeatherViewController.swift in Sources */,

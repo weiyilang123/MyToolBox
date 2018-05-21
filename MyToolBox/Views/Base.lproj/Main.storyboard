@@ -248,18 +248,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYO-3P-J2R">
-                                <rect key="frame" x="33" y="153" width="109" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="rXN-uT-feb"/>
-                                </constraints>
-                                <state key="normal" title="Scan"/>
-                                <connections>
-                                    <action selector="scanBarcode:" destination="MOV-qI-VPw" eventType="touchUpInside" id="ZFa-iV-lcq"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan item to get barcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AN6-PC-r7Z">
-                                <rect key="frame" x="25" y="232" width="193" height="21"/>
+                                <rect key="frame" x="25" y="292.66666666666669" width="193" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="mXz-rm-mC0"/>
                                 </constraints>
@@ -268,22 +258,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEA-Cd-zTQ">
-                                <rect key="frame" x="17" y="294" width="342" height="127"/>
+                                <rect key="frame" x="17" y="335" width="342" height="102"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CXF-j8-qYv">
-                                        <rect key="frame" x="0.0" y="-1" width="121" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="66.333333333333329"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="121" id="lm6-RX-Cf1"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Item" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCK-n4-P0V">
-                                        <rect key="frame" x="129" y="-1" width="205" height="81"/>
+                                        <rect key="frame" x="129" y="-1" width="205" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Item" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc0-Ns-SaD">
-                                        <rect key="frame" x="129" y="88" width="142" height="39"/>
+                                        <rect key="frame" x="129" y="27.333333333333314" width="142" height="39"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="39" id="smL-wE-96y"/>
                                         </constraints>
@@ -294,40 +284,47 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="CXF-j8-qYv" secondAttribute="bottom" id="66Z-zz-7Wh"/>
+                                    <constraint firstAttribute="bottom" secondItem="CXF-j8-qYv" secondAttribute="bottom" constant="35.666666666666671" id="66Z-zz-7Wh"/>
                                     <constraint firstItem="uc0-Ns-SaD" firstAttribute="top" secondItem="BCK-n4-P0V" secondAttribute="bottom" constant="8" id="6Fo-xA-Gtb"/>
-                                    <constraint firstItem="uc0-Ns-SaD" firstAttribute="bottom" secondItem="DEA-Cd-zTQ" secondAttribute="bottomMargin" constant="8" id="JcM-Ts-rfT"/>
+                                    <constraint firstItem="uc0-Ns-SaD" firstAttribute="bottom" secondItem="DEA-Cd-zTQ" secondAttribute="bottomMargin" constant="-27.666666666666686" id="JcM-Ts-rfT"/>
                                     <constraint firstAttribute="trailing" secondItem="uc0-Ns-SaD" secondAttribute="trailing" constant="71" id="RBm-LO-AmC"/>
                                     <constraint firstItem="BCK-n4-P0V" firstAttribute="leading" secondItem="CXF-j8-qYv" secondAttribute="trailing" constant="8" symbolic="YES" id="V9l-fG-dTI"/>
                                     <constraint firstItem="BCK-n4-P0V" firstAttribute="leading" secondItem="uc0-Ns-SaD" secondAttribute="leading" id="njk-sz-ovL"/>
                                     <constraint firstItem="BCK-n4-P0V" firstAttribute="trailing" secondItem="DEA-Cd-zTQ" secondAttribute="trailingMargin" id="o1i-4b-7ys"/>
                                     <constraint firstItem="BCK-n4-P0V" firstAttribute="top" secondItem="DEA-Cd-zTQ" secondAttribute="top" constant="-1" id="pdz-AS-KRI"/>
-                                    <constraint firstItem="CXF-j8-qYv" firstAttribute="centerY" secondItem="DEA-Cd-zTQ" secondAttribute="centerY" id="yQA-3h-CRe"/>
+                                    <constraint firstItem="CXF-j8-qYv" firstAttribute="centerY" secondItem="DEA-Cd-zTQ" secondAttribute="centerY" constant="-17.833333333333336" id="yQA-3h-CRe"/>
                                     <constraint firstItem="CXF-j8-qYv" firstAttribute="leading" secondItem="DEA-Cd-zTQ" secondAttribute="leading" id="zkQ-tA-9cj"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YSa-sl-sZa">
+                                <rect key="frame" x="16" y="423" width="343" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DEA-Cd-zTQ" firstAttribute="centerX" secondItem="WQX-rI-QrV" secondAttribute="centerX" id="82e-wq-kIz"/>
                             <constraint firstItem="AN6-PC-r7Z" firstAttribute="leading" secondItem="To0-u7-Li1" secondAttribute="leading" constant="25" id="B6m-xj-ZNF"/>
-                            <constraint firstItem="DEA-Cd-zTQ" firstAttribute="top" secondItem="AN6-PC-r7Z" secondAttribute="bottom" constant="41" id="JWW-Eb-Qd1"/>
+                            <constraint firstItem="DEA-Cd-zTQ" firstAttribute="top" secondItem="AN6-PC-r7Z" secondAttribute="bottom" constant="21.333333333333314" id="JWW-Eb-Qd1"/>
                             <constraint firstItem="DEA-Cd-zTQ" firstAttribute="trailing" secondItem="WQX-rI-QrV" secondAttribute="trailingMargin" id="SO4-t6-zuA"/>
-                            <constraint firstItem="ZYO-3P-J2R" firstAttribute="leading" secondItem="To0-u7-Li1" secondAttribute="leading" constant="33" id="b8c-ZA-3tf"/>
-                            <constraint firstItem="To0-u7-Li1" firstAttribute="trailing" secondItem="ZYO-3P-J2R" secondAttribute="trailing" constant="233" id="mBX-Qc-6cf"/>
-                            <constraint firstItem="To0-u7-Li1" firstAttribute="bottom" secondItem="DEA-Cd-zTQ" secondAttribute="bottom" constant="308" id="vpp-Nf-wjJ"/>
-                            <constraint firstItem="AN6-PC-r7Z" firstAttribute="top" secondItem="ZYO-3P-J2R" secondAttribute="bottom" constant="8" symbolic="YES" id="yNl-bI-bGZ"/>
-                            <constraint firstItem="ZYO-3P-J2R" firstAttribute="top" secondItem="To0-u7-Li1" secondAttribute="top" constant="13" id="z3M-mD-Jbz"/>
+                            <constraint firstItem="To0-u7-Li1" firstAttribute="bottom" secondItem="DEA-Cd-zTQ" secondAttribute="bottom" constant="292" id="vpp-Nf-wjJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="To0-u7-Li1"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Price Checker" id="7e0-fG-dNZ"/>
+                    <navigationItem key="navigationItem" title="Price Checker" id="7e0-fG-dNZ">
+                        <barButtonItem key="rightBarButtonItem" title="Scan" image="scanIcon" id="2Lt-ls-EpP">
+                            <connections>
+                                <segue destination="FB4-ZN-9g2" kind="presentation" id="yxW-EH-BAB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="barcode" destination="AN6-PC-r7Z" id="gDe-T1-aq2"/>
+                        <outlet property="displayPriceInfoTableView" destination="YSa-sl-sZa" id="Wgd-Ax-efY"/>
                         <outlet property="itemImage" destination="CXF-j8-qYv" id="HoU-gy-zeb"/>
                         <outlet property="itemName" destination="BCK-n4-P0V" id="toY-kS-Qhf"/>
                         <outlet property="itemPrice" destination="uc0-Ns-SaD" id="gst-h3-Eve"/>
-                        <segue destination="FB4-ZN-9g2" kind="presentation" identifier="captureSegue" id="667-PD-PHy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggc-0H-Fg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -473,6 +470,7 @@
         <image name="EasyToolTabBarIcon" width="30" height="30"/>
         <image name="navigation" width="42" height="42"/>
         <image name="pricecheckIcon" width="42" height="42"/>
+        <image name="scanIcon" width="21" height="21"/>
         <image name="scanIndicator" width="85" height="85"/>
         <image name="translateIcon" width="42" height="42"/>
         <image name="weatherIcon" width="42" height="42"/>
