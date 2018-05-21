@@ -10,6 +10,8 @@ import UIKit
 
 class MainFirstViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,9 +25,18 @@ class MainFirstViewController: UIViewController {
 
     @IBAction func weatherButton(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "weatherSague", sender: self)
+        performSegue(withIdentifier: "weatherSegue", sender: self)
         
     }
     
+    @IBAction func translateButton(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "translateSegue", sender: self)
+    }
+    
+    @IBAction func priceCheckButton(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "priceCheckSegue", sender: self)
+    }
 }
 

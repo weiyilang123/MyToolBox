@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4428C5D420B1306B00F9D3D2 /* PriceCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428C5D320B1306B00F9D3D2 /* PriceCheckViewController.swift */; };
+		443C7E2D20B03298006B7043 /* CaptureBarCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C7E2C20B03298006B7043 /* CaptureBarCodeViewController.swift */; };
 		4492463D20AE8B99000B0F1E /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492463C20AE8B99000B0F1E /* WeatherDataModel.swift */; };
 		4492464520AEC8D8000B0F1E /* WeatherDisplayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492464420AEC8D8000B0F1E /* WeatherDisplayCollectionViewCell.swift */; };
 		4492833E20AE63FE00A3C001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492833D20AE63FE00A3C001 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4428C5D320B1306B00F9D3D2 /* PriceCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCheckViewController.swift; sourceTree = "<group>"; };
+		443C7E2C20B03298006B7043 /* CaptureBarCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureBarCodeViewController.swift; sourceTree = "<group>"; };
 		4492463C20AE8B99000B0F1E /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		4492464420AEC8D8000B0F1E /* WeatherDisplayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDisplayCollectionViewCell.swift; sourceTree = "<group>"; };
 		4492833A20AE63FE00A3C001 /* MyToolBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToolBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443C7E0B20B003D1006B7043 /* WeatherPageControlers */ = {
+			isa = PBXGroup;
+			children = (
+				4492835620AE66CD00A3C001 /* WeatherViewController.swift */,
+				4492464420AEC8D8000B0F1E /* WeatherDisplayCollectionViewCell.swift */,
+			);
+			path = WeatherPageControlers;
+			sourceTree = "<group>";
+		};
 		4492833120AE63FE00A3C001 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +96,9 @@
 			children = (
 				4492833D20AE63FE00A3C001 /* AppDelegate.swift */,
 				4492833F20AE63FE00A3C001 /* MainFirstViewController.swift */,
-				4492835620AE66CD00A3C001 /* WeatherViewController.swift */,
-				4492464420AEC8D8000B0F1E /* WeatherDisplayCollectionViewCell.swift */,
+				443C7E0B20B003D1006B7043 /* WeatherPageControlers */,
+				4428C5D320B1306B00F9D3D2 /* PriceCheckViewController.swift */,
+				443C7E2C20B03298006B7043 /* CaptureBarCodeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443C7E2D20B03298006B7043 /* CaptureBarCodeViewController.swift in Sources */,
+				4428C5D420B1306B00F9D3D2 /* PriceCheckViewController.swift in Sources */,
 				4492834620AE63FE00A3C001 /* MyToolBox.xcdatamodeld in Sources */,
 				4492463D20AE8B99000B0F1E /* WeatherDataModel.swift in Sources */,
 				4492464520AEC8D8000B0F1E /* WeatherDisplayCollectionViewCell.swift in Sources */,
