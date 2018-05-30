@@ -13,6 +13,7 @@ class PriceInfoCell: UITableViewCell {
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemPrice: UILabel!
+    @IBOutlet weak var starOrNot: UILabel!
     
 
 }

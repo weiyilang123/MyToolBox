@@ -8,4 +8,9 @@ target 'MyToolBox' do
   # Pods for MyToolBox
 pod 'Alamofire'
 pod 'SwiftyJSON'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
+pod 'Firebase/Storage'
+pod 'Firebase/Core'
+
 end

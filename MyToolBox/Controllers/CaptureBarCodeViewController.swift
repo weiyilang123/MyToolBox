@@ -43,7 +43,7 @@ class CaptureBarCodeViewController: UIViewController,AVCaptureMetadataOutputObje
 
         output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
         
-        output.metadataObjectTypes = [.qr, .ean13 ]
+        output.metadataObjectTypes = [.ean13 ]
 
         video = AVCaptureVideoPreviewLayer(session: session)
         video.frame = view.layer.bounds

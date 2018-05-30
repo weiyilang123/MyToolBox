@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4428C5D420B1306B00F9D3D2 /* PriceCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428C5D320B1306B00F9D3D2 /* PriceCheckViewController.swift */; };
+		442A2B5720B3AB8400530935 /* PriceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A2B5620B3AB8400530935 /* PriceDetailViewController.swift */; };
 		443C7E2D20B03298006B7043 /* CaptureBarCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C7E2C20B03298006B7043 /* CaptureBarCodeViewController.swift */; };
 		446C5C5E20B267A800DA3DF9 /* PriceInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 446C5C5D20B267A800DA3DF9 /* PriceInfoCell.xib */; };
 		446C5C6020B26BC500DA3DF9 /* PriceInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446C5C5F20B26BC500DA3DF9 /* PriceInfoCell.swift */; };
@@ -21,11 +22,13 @@
 		4492834820AE63FF00A3C001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4492834720AE63FF00A3C001 /* Assets.xcassets */; };
 		4492834B20AE63FF00A3C001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4492834920AE63FF00A3C001 /* LaunchScreen.storyboard */; };
 		4492835720AE66CD00A3C001 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4492835620AE66CD00A3C001 /* WeatherViewController.swift */; };
+		44A2D65820BF286500F6A75E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44A2D65720BF286500F6A75E /* GoogleService-Info.plist */; };
 		FEE0AEC9999C1B7A355DA65F /* Pods_MyToolBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35203A97EC54C6454DD3D33 /* Pods_MyToolBox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4428C5D320B1306B00F9D3D2 /* PriceCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCheckViewController.swift; sourceTree = "<group>"; };
+		442A2B5620B3AB8400530935 /* PriceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDetailViewController.swift; sourceTree = "<group>"; };
 		443C7E2C20B03298006B7043 /* CaptureBarCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureBarCodeViewController.swift; sourceTree = "<group>"; };
 		446C5C5D20B267A800DA3DF9 /* PriceInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceInfoCell.xib; sourceTree = "<group>"; };
 		446C5C5F20B26BC500DA3DF9 /* PriceInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceInfoCell.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		4492834A20AE63FF00A3C001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4492834C20AE63FF00A3C001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4492835620AE66CD00A3C001 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		44A2D65720BF286500F6A75E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7273005F6C8AF787FF5D354A /* Pods-MyToolBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToolBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyToolBox/Pods-MyToolBox.release.xcconfig"; sourceTree = "<group>"; };
 		9885125F3A379FB41FB65F9F /* Pods-MyToolBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToolBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyToolBox/Pods-MyToolBox.debug.xcconfig"; sourceTree = "<group>"; };
 		A35203A97EC54C6454DD3D33 /* Pods_MyToolBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyToolBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +97,7 @@
 				4492835320AE645900A3C001 /* Views */,
 				4492835520AE646A00A3C001 /* Supporting Files */,
 				4492834C20AE63FF00A3C001 /* Info.plist */,
+				44A2D65720BF286500F6A75E /* GoogleService-Info.plist */,
 			);
 			path = MyToolBox;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				443C7E2C20B03298006B7043 /* CaptureBarCodeViewController.swift */,
 				446C5C5F20B26BC500DA3DF9 /* PriceInfoCell.swift */,
 				446C5C5D20B267A800DA3DF9 /* PriceInfoCell.xib */,
+				442A2B5620B3AB8400530935 /* PriceDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 				446C5C5E20B267A800DA3DF9 /* PriceInfoCell.xib in Resources */,
 				4492834820AE63FF00A3C001 /* Assets.xcassets in Resources */,
 				4492834320AE63FE00A3C001 /* Main.storyboard in Resources */,
+				44A2D65820BF286500F6A75E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +258,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyToolBox/Pods-MyToolBox-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -271,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				443C7E2D20B03298006B7043 /* CaptureBarCodeViewController.swift in Sources */,
+				442A2B5720B3AB8400530935 /* PriceDetailViewController.swift in Sources */,
 				4428C5D420B1306B00F9D3D2 /* PriceCheckViewController.swift in Sources */,
 				4492834620AE63FE00A3C001 /* MyToolBox.xcdatamodeld in Sources */,
 				446C5C6020B26BC500DA3DF9 /* PriceInfoCell.swift in Sources */,
@@ -431,7 +447,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yilangwei.under.mytoolbox.MyToolBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yilangwei.under.MyToolBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,7 +466,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yilangwei.under.mytoolbox.MyToolBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yilangwei.under.MyToolBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
